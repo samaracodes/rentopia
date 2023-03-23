@@ -36,3 +36,48 @@
     transform: rotate(360deg);
   }
 }
+
+#card-desc-prev {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.col {
+  display: flex;
+}
+
+#greeting-heading {
+  color: pink;
+  padding: 10px;
+}
+
+.navbar {
+  border-bottom: dotted;
+  color: rgb(137, 136, 136);
+}
+
+.navbar-brand {
+  margin-left: 30px;
+  font-size: 25px;
+}
+
+.navbar img {
+  width: 70px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+#nav-brand-name {
+  color: #0b2e59;
+  font-family: 'Montserrat', sans-serif;
+}
+
+#nav-sub-brand {
+  color:grey;
+  font-size: 11px;
+  font-weight:bold;
+  font-family: 'Montserrat', sans-serif;
+  display: block;
+  margin-top: -2em;
+  margin-right: -1em;
+}

@@ -10,7 +10,7 @@ const Navbar = () => {
                     <img src="../brand-2.png" className="d-inline-block" />
 
                     RENTOPIA
-                    <span className="navbar-brand" id="nav-sub-brand">LUXURY REALTY</span>
+                    <span className="navbar-brand" id="nav-sub-brand">LUXURY RENTALS</span>
                 </a>
                 
             
