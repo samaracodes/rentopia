@@ -7,7 +7,7 @@ const Homepage = ({ allListings }) => {
     const listings = allListings.map((listing) => 
         <div className="col" id="listing-card-col" key={listing.id} >
             <div className="card h-100">
-                <img src={listing.image} className="card-img-top" alt="..."/>
+                <img src={listing.imageUrl} className="card-img-top" alt="..."/>
                 <div className="card-body">
                     <h4 className="card-title text-start">{listing.price}</h4>
                     
@@ -20,7 +20,7 @@ const Homepage = ({ allListings }) => {
                     </p>
 
                     <p className="card-text text-start" id="card-desc-prev">
-                        {listing.description}
+                        {listing.listingDescription}
                     </p>
                     
                 </div>
@@ -38,7 +38,6 @@ const Homepage = ({ allListings }) => {
                     {listings}
                 </div>
             </div>
-
         </>
     )
 }
