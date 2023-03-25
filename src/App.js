@@ -17,6 +17,10 @@ function App() {
       .then((allListings) => setAllListings(allListings))
   }, [])
 
+  const onAddListing = (newListing) => {
+    setAllListings([...allListings, newListing])
+  }
+
 // Console Messages
   console.log("Rental Listings Inventory🔑")
   console.table(allListings)
@@ -31,7 +35,8 @@ function App() {
 
         <Routes>
           <Route path="/" element={<Homepage allListings={allListings} />} />
-          <Route path="/listings/new" element={<ListingForm />} />
+
+          <Route path="/listings/new" element={<ListingForm onAddListing={onAddListing} allListings={allListings} />} />
           
         </Routes>
     </div>
