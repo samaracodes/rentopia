@@ -1,33 +1,26 @@
 import React, { useState, useEffect } from "react";
 
-const Homepage = () => {
-    const [listings, setListings] = useState([])
 
-    console.dir(listings)
-    
-    useEffect(() => {
-        fetch("http://localhost:3001/listings")
-        .then((response) => response.json())
-        .then((listings) => setListings(listings))
-    }, [])
 
-    const listingItems = listings.map((listingItem) => 
-        <div className="col" key={listingItem.id} >
-            <div className="card">
-                <img src={listingItem.image} className="card-img-top" alt="..."/>
+const Homepage = ({ allListings }) => {
+
+    const listings = allListings.map((listing) => 
+        <div className="col" id="listing-card-col" key={listing.id} >
+            <div className="card h-100">
+                <img src={listing.image} className="card-img-top" alt="..."/>
                 <div className="card-body">
-                    <h4 className="card-title text-start">{listingItem.price}</h4>
+                    <h4 className="card-title text-start">{listing.price}</h4>
                     
                     <p className="card-text text-start">
                         <small className="text-muted">
-                            {listingItem.bedrooms} bedrooms | {listingItem.bathrooms} bathrooms
+                            {listing.bedrooms} bedrooms | {listing.bathrooms} bathrooms
                             <br></br>
-                            Location: {listingItem.location}
+                            Location: {listing.location}
                         </small>
                     </p>
 
                     <p className="card-text text-start" id="card-desc-prev">
-                        {listingItem.description}
+                        {listing.description}
                     </p>
                     
                 </div>
@@ -42,7 +35,7 @@ const Homepage = () => {
 
             <div className="container">
                 <div className="row row-cols-1 row-cols-md-3 g-4">
-                    {listingItems}
+                    {listings}
                 </div>
             </div>
 
