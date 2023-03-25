@@ -1,50 +1,50 @@
 {
-    "listings": [
-        {
-            "id": 1,
-            "image": "https://image1.apartmentfinder.com/i2/TryTAuyosgiqjgHPVld8axwaI0z_yOgwUMimuR6Fq9Y/110/image.jpg",
-            "location": "Brookyln",
-            "price": "$2000",
-            "bedrooms": "2",
-            "bathrooms": "1.5",
-            "description": "Welcome to 145 Milton Street. Step inside this charming one bedroom located on one of the most beautiful tree lined blocks in Greenpoint's Historic Landmarked District. Features include high ceilings, central air split system units in LR & BR, and hardwood floors with all original plaster details throughout. The kitchen is a galley style that features dark custom cabinetry, open white oak floating shelving providing ample storage space, and a dishwasher. The bedroom can fit up to a king size bed and has an abundance of closet space including overhead storage space for your bigger items. Steps to everything on Franklin Street and Manhattan Avenue and a short walk to the G Greenpoint Avenue subway. Heat, hot water & cooking gas are included in the rent. Wired for Spectrum internet. Sorry no pets. Available for May 1st."
-        },
-        {
-            "id": "2",
-            "image": "https://photos.zillowstatic.com/fp/a06cc13131817a654bc1ca7be8104792-uncropped_scaled_within_1536_1152.webp",
-            "location": "Brooklyn",
-            "price": "$3525",
-            "bedrooms": "1",
-            "bathrooms": "1",
-            "description": "Bright1 bedroom with hardwood floors, Frigidaire stainless appliances, granite countertops, Grohe bath fixtures, Bosch W/D, and triple pane window glass for noise reduction. Pet friendly building has 24 hour concierge, 5,360 SF duplex fitness center, full basketball court, roof deck with BBQ and large screen projector, six green spaces, multiple lounges, childrens playroom, and dog washing station. Sweeping Manhattan views, 1 Stop to Manhattan, and 1 Block from Court Square subway station."
-        },
-        {
-            "id": "3",
-            "image": "https://photos.zillowstatic.com/fp/037d1dfb1ad7bb0fe81de2c8c5d5c270-uncropped_scaled_within_1536_1152.webp",
-            "location": "Queens",
-            "price": "$2100",
-            "bedrooms": "2",
-            "bathrooms": "1.5",
-            "description": "2 bedroom co op in an elevator building in prime Bensonhurst area. Beautiful new kitchen, modern bathroom, laundry on the 1st floor, super on premises, co op board approval required. Bright and sunny on the top floor! All stainless steel appliances, large closets. Landlord pays heat, hot water and cooking gas"
-        },
-        {
-            "id": "4",
-            "image": "https://images1.apartments.com/i2/rb90ZOsQn5uTXFvsQn2QNqIkSmRPe23ZC_lDcLVQjJU/111/2-bedroom-apartment-for-rent-in-midwood-unit-3i-brooklyn-ny-primary-photo.jpg",
-            "location": "Bronx",
-            "price": "$3200",
-            "bedrooms": "3",
-            "bathrooms": "2",
-            "description": "A second floor 2-bedroom apartment on a legal two-family home featuring a large kitchen, 3 Bedrooms and 2 full bath. Floors have been re-done, all new paint job and the bathrooms has been updated. Large windows lots of light and large kitchen with cathedral ceilings. close to all major transportation as well as shopping-"
-        },
-        {
-            "id": "5",
-            "image": "https://res.cloudinary.com/apartmentlist/image/upload/f_auto,q_auto,t_web-base/23a4534de9f02021dbc6e0e4df639d3c.jpg",
-            "location": "Staten Island",
-            "price": "$1900",
-            "bedrooms": "1",
-            "bathrooms": "1",
-            "description": "Attached townhouse in the Carle Place Schools featuring 3 bedrooms, 2.5 baths, all hardwood floors, large living room with fireplace, dining area, eat-in-kitchen with sliders to large patio and private, fenced backyard and nice gardens!! 1 car garage attached, unfinished basement with laundry and storage. Gas heat and Central Air Conditioning...."
-        }
-       
-    ]
+  "listings": [
+    {
+      "id": 1,
+      "imageUrl": "https://image1.apartmentfinder.com/i2/TryTAuyosgiqjgHPVld8axwaI0z_yOgwUMimuR6Fq9Y/110/image.jpg",
+      "location": "Brookyln",
+      "price": "$2000",
+      "bedrooms": "2",
+      "bathrooms": "1.5",
+      "listingDescription": "Welcome to 145 Milton Street. Step inside this charming one bedroom located on one of the most beautiful tree lined blocks in Greenpoint's Historic Landmarked District. Features include high ceilings, central air split system units in LR & BR, and hardwood floors with all original plaster details throughout. The kitchen is a galley style that features dark custom cabinetry, open white oak floating shelving providing ample storage space, and a dishwasher. The bedroom can fit up to a king size bed and has an abundance of closet space including overhead storage space for your bigger items. Steps to everything on Franklin Street and Manhattan Avenue and a short walk to the G Greenpoint Avenue subway. Heat, hot water & cooking gas are included in the rent. Wired for Spectrum internet. Sorry no pets. Available for May 1st."
+    },
+    {
+      "id": "2",
+      "imageUrl": "https://photos.zillowstatic.com/fp/a06cc13131817a654bc1ca7be8104792-uncropped_scaled_within_1536_1152.webp",
+      "location": "Brooklyn",
+      "price": "$3525",
+      "bedrooms": "1",
+      "bathrooms": "1",
+      "listingDescription": "Bright1 bedroom with hardwood floors, Frigidaire stainless appliances, granite countertops, Grohe bath fixtures, Bosch W/D, and triple pane window glass for noise reduction. Pet friendly building has 24 hour concierge, 5,360 SF duplex fitness center, full basketball court, roof deck with BBQ and large screen projector, six green spaces, multiple lounges, childrens playroom, and dog washing station. Sweeping Manhattan views, 1 Stop to Manhattan, and 1 Block from Court Square subway station."
+    },
+    {
+      "id": "3",
+      "imageUrl": "https://photos.zillowstatic.com/fp/037d1dfb1ad7bb0fe81de2c8c5d5c270-uncropped_scaled_within_1536_1152.webp",
+      "location": "Queens",
+      "price": "$2100",
+      "bedrooms": "2",
+      "bathrooms": "1.5",
+      "listingDescription": "2 bedroom co op in an elevator building in prime Bensonhurst area. Beautiful new kitchen, modern bathroom, laundry on the 1st floor, super on premises, co op board approval required. Bright and sunny on the top floor! All stainless steel appliances, large closets. Landlord pays heat, hot water and cooking gas"
+    },
+    {
+      "id": "4",
+      "imageUrl": "https://images1.apartments.com/i2/rb90ZOsQn5uTXFvsQn2QNqIkSmRPe23ZC_lDcLVQjJU/111/2-bedroom-apartment-for-rent-in-midwood-unit-3i-brooklyn-ny-primary-photo.jpg",
+      "location": "Bronx",
+      "price": "$3200",
+      "bedrooms": "3",
+      "bathrooms": "2",
+      "listingDescription": "A second floor 2-bedroom apartment on a legal two-family home featuring a large kitchen, 3 Bedrooms and 2 full bath. Floors have been re-done, all new paint job and the bathrooms has been updated. Large windows lots of light and large kitchen with cathedral ceilings. close to all major transportation as well as shopping-"
+    },
+    {
+      "id": "5",
+      "imageUrl": "https://res.cloudinary.com/apartmentlist/image/upload/f_auto,q_auto,t_web-base/23a4534de9f02021dbc6e0e4df639d3c.jpg",
+      "location": "Staten Island",
+      "price": "$1900",
+      "bedrooms": "1",
+      "bathrooms": "1",
+      "listingDescription": "Attached townhouse in the Carle Place Schools featuring 3 bedrooms, 2.5 baths, all hardwood floors, large living room with fireplace, dining area, eat-in-kitchen with sliders to large patio and private, fenced backyard and nice gardens!! 1 car garage attached, unfinished basement with laundry and storage. Gas heat and Central Air Conditioning...."
+    }
+
+  ]
 }
