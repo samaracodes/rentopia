@@ -5,7 +5,7 @@ const Navbar = () => {
         <nav className="navbar navbar-expand-lg">
             <div className="container-fluid">
                 
-                <a className="navbar-brand mb-1 h1" id="nav-brand-name" href="#">
+                <a className="navbar-brand mb-1 h1" id="nav-brand-name" href="/">
 
                     <img src="../brand-2.png" className="d-inline-block" />
 
@@ -14,14 +14,14 @@ const Navbar = () => {
                 </a>
                 
             
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="/">Home</a>
+                <div className="collapse navbar-collapse" id="navbarNav">
+                    <ul className="navbar-nav ms-auto">
+                        <li className="nav-item">
+                            <a className="nav-link active" aria-current="page" href="/">Home</a>
                         </li>
 
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Add Listing</a>
+                        <li className="nav-item">
+                            <a className="nav-link" href="/projects/new">Add Listing</a>
                         </li>
                     </ul>
                 </div>
