@@ -36,15 +36,19 @@
     transform: rotate(360deg);
   }
 }
+/* ----------------------------------------------- */
 
 #card-desc-prev {
+  
+  height: 100px;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
   overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
 }
 
-.col {
-  display: flex;
+.card, img {
+  height: 100%;
 }
 
 #greeting-heading {
@@ -80,4 +84,9 @@
   display: block;
   margin-top: -2em;
   margin-right: -1em;
+}
+
+/* ------------------------------------------------- */
+.col-form-label {
+  display: flex;
 }
