@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useNavigate } from 'react-router-dom'
 
 const ListingForm = ({ onAddListing, allListings }) => {
     const initialState = {
@@ -9,6 +10,8 @@ const ListingForm = ({ onAddListing, allListings }) => {
         bathrooms: "",
         listingDescription: ""
     }
+
+    const navigate = useNavigate()
 
 
     const [formData, setFormData] = useState(initialState)
@@ -46,13 +49,21 @@ const ListingForm = ({ onAddListing, allListings }) => {
         fetch("http://localhost:3001/listings", configObj)
           .then((res) => res.json())
           .then((newListing) => {
-            // merge newest listing into "allListings"
-            onAddListing(newListing);
+            if (newListing) {
+                console.log(`🎉 New Listing Successfully Submitted`)
 
-            //reset/clear form 
-            setFormData(initialState);
-            
-            console.log(`🎉 New Listing Successfully Submitted`)
+                // merge newest listing into "allListings"
+                onAddListing(newListing);
+
+                //clear out form 
+                setFormData(initialState);
+
+                //redirect to homepage to see new listing
+                navigate("/")
+            } else {
+                console.error('Error', newListing)
+            }
+
         });
     };
 
