@@ -39,7 +39,6 @@
 /* ----------------------------------------------- */
 
 #card-desc-prev {
-  
   height: 100px;
   display: -webkit-box;
   -webkit-line-clamp: 4;
@@ -52,13 +51,13 @@
 }
 
 #greeting-heading {
-  color: pink;
+  color: #3b5274;
   padding: 10px;
 }
 
 .navbar {
-  border-bottom: dotted;
-  color: rgb(137, 136, 136);
+  background-color: rgb(234, 225, 227);
+  /* background-color: #0b2e59; */
 }
 
 .navbar-brand {
@@ -87,6 +86,19 @@
 }
 
 /* ------------------------------------------------- */
+/* Add New Listing Page */
 .col-form-label {
   display: flex;
+}
+
+/* ------------------------------------------------- */
+/* Homepage  */
+
+.carousel-item img {
+  height: 500px;
+  object-fit:cover;
+}
+
+#listings-container {
+  padding: 100px
 }

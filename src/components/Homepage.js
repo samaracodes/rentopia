@@ -1,10 +1,8 @@
 import React, { useState, useEffect } from "react";
 
+const Homepage = ({ listings }) => {
 
-
-const Homepage = ({ allListings }) => {
-
-    const listings = allListings.map((listing) => 
+    const allListings = listings.map((listing) => 
         <div className="col" id="listing-card-col" key={listing.id} >
             <div className="card h-100">
                 <img src={listing.imageUrl} className="card-img-top" alt="..."/>
@@ -30,12 +28,28 @@ const Homepage = ({ allListings }) => {
 
     return (
         <>
-            <h1 className="display-3" id="greeting-heading">Welcome to Rentopia</h1>
-            <h3 className="">All Rental Listings</h3>
+            <h1 className="display-3" id="greeting-heading">
+                Welcome to Rentopia
+            </h1>
 
-            <div className="container">
+            <div id="homepage-carousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                    <img src="./rental-carousel1.jpeg" class="d-block w-100" alt="..."/>
+                </div>
+                <div class="carousel-item">
+                    <img src="./rental-carousel2.jpg" class="d-block w-100" alt="..."/>
+                </div>
+                <div class="carousel-item">
+                    <img src="./rental-carousel5.jpg" class="d-block w-100" alt="..."/>
+                    </div>
+                </div>
+            </div>
+
+
+            <div className="container" id="listings-container">
                 <div className="row row-cols-1 row-cols-md-3 g-4">
-                    {listings}
+                    {allListings}
                 </div>
             </div>
         </>
