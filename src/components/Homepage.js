@@ -1,37 +1,11 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 
 const Homepage = ({ listings }) => {
 
-    const allListings = listings.map((listing) => 
-        <div className="col" id="listing-card-col" key={listing.id} >
-            <div className="card h-100">
-                <img src={listing.imageUrl} className="card-img-top" alt="..."/>
-                <div className="card-body">
-                    <h4 className="card-title text-start">{listing.price}</h4>
-                    
-                    <p className="card-text text-start">
-                        <small className="text-muted">
-                            {listing.bedrooms} bedrooms | {listing.bathrooms} bathrooms
-                            <br></br>
-                            Location: {listing.location}
-                        </small>
-                    </p>
-
-                    <p className="card-text text-start" id="card-desc-prev">
-                        {listing.listingDescription}
-                    </p>
-                    
-                </div>
-            </div>
-        </div>       
-    )
 
     return (
         <>
-            {/* <h1 className="display-3" id="greeting-heading">
-                Welcome to Rentopia
-            </h1> */}
-
             <div id="homepage-carousel" class="carousel slide" data-bs-ride="carousel" data-bs-pause="false">
                 <div class="carousel-inner">
 
@@ -64,11 +38,11 @@ const Homepage = ({ listings }) => {
                 </div>
             </div>
 
-
             <div className="container" id="listings-container">
-                <div className="row row-cols-1 row-cols-md-3 g-4">
-                    {allListings}
-                </div>
+                <h1 className="display-3" id="greeting-heading">
+                    Welcome to Rentopia
+                </h1>
+
             </div>
         </>
     )
