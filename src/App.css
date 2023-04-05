@@ -36,7 +36,25 @@
     transform: rotate(360deg);
   }
 }
+
+.btn {
+  margin: 10px;
+}
+
 /* ----------------------------------------------- */
+/* Home & Listings Page  */
+
+.carousel-item img {
+  height: 500px;
+  object-fit:cover;
+}
+
+/* ----------------------------------------------- */
+/* Listings Page  */
+
+#listings-container {
+  padding: 50px
+}
 
 #card-desc-prev {
   height: 100px;
@@ -46,8 +64,8 @@
   overflow: hidden;
 }
 
-.card, img {
-  height: 100%;
+.card img {
+  height: 270px;
 }
 
 #greeting-heading {
@@ -94,13 +112,7 @@
 }
 
 /* ------------------------------------------------- */
-/* Homepage  */
 
-.carousel-item img {
-  height: 500px;
-  object-fit:cover;
-}
 
-#listings-container {
-  padding: 100px
-}
+
+/* ------------------------------------------------- */
