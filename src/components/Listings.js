@@ -1,45 +1,95 @@
-// import React, { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
+import { Link, useParams } from "react-router-dom";
 
-// const Listings = ({ allListings }) => {
-    
-//     const listing = allListings.map((listing) => 
-//         <div className="col" key={listing.id} >
-//             <div className="card">
-//                 <img src={listing.image} className="card-img-top" alt="..."/>
-//                 <div className="card-body">
-//                     <h4 className="card-title text-start">{listing.price}</h4>
-                    
-//                     <p className="card-text text-start">
-//                         <small className="text-muted">
-//                             {listing.bedrooms} bedrooms | {listing.bathrooms} bathrooms
-//                             <br></br>
-//                             Location: {listing.location}
-//                         </small>
-//                     </p>
+const Listings = ({ listings, enterListingEditModeFor }) => {
 
-//                     <p className="card-text text-start" id="card-desc-prev">
-//                         {listing.description}
-//                     </p>
-                    
-//                 </div>
-//             </div>
-//         </div>       
-//     )
+    const handleEdit = (e) => {
+        console.log("Edit clicked")
+        console.log(e.target)
 
-//     return (
-//         <>
-//             <h1 className="display-3" id="greeting-heading">Welcome to Rentopia</h1>
-//             <h3 className="">All Rental Listings</h3>
+    }
 
-//             <div className="container">
-//                 <div className="row row-cols-1 row-cols-md-3 g-4">
-//                     {listing}
-//                     {console.log("Listing component showing data ")}
-//                 </div>
-//             </div>
+    const handleDelete = () => {
+        
+    }
 
-//         </>
-//     )
-// }
+    const allListings = listings.map((listing) => 
+    <div key={listing.id} className="col" id={`listing-col-${listing.id}`}>
+        <div id={`listing-card-${listing.id}`}className="card h-100">
 
-// export default Listings
+        <Link to={`/listings/${listing.id}`}>
+
+            <img src={listing.imageUrl} className="card-img-top" alt="..."/>
+        </Link>
+            <div className="card-body">
+                <h4 className="card-title text-start">{listing.price}</h4>
+                
+                <p className="card-text text-start">
+                    <small className="text-muted">
+                        {listing.bedrooms} bedrooms | {listing.bathrooms} bathrooms
+                        <br></br>
+                        Location: {listing.location}
+                    </small>
+                </p>
+
+                <p className="card-text text-start" id="card-desc-prev">
+                    {listing.listingDescription}
+                </p>
+                
+                <Link class="btn btn-primary" type="button" onClick={handleEdit} to={`/listings/${listing.id}/edit`}>Edit</Link>
+
+                <Link class="btn btn-primary" type="button" value="Delete" onClick={handleDelete}>Delete</Link>
+            </div>
+        </div>
+    </div>        
+    )
+
+
+    return (
+        <>
+            <div id="Listing-carousel" class="carousel slide" data-bs-ride="carousel" data-bs-pause="false">
+                <div class="carousel-inner">
+
+                    <div class="carousel-item active" data-bs-interval="2000">
+                        <img src="./rental-carousel1.jpeg" class="d-block w-100" alt="..."/>
+                    </div>
+
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <img src="./rental-carousel2.jpg" class="d-block w-100" alt="..."/>
+                    </div>
+
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <img src="./rental-carousel3.jpg" class="d-block w-100" alt="..."/>
+                    </div>
+
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <img src="./rental-carousel4.jpg" class="d-block w-100" alt="..."/>
+                    </div>
+
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <img src="./rental-carousel5.jpg" class="d-block w-100" alt="..."/>
+                    </div>
+
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <img src="./rental-carousel6.jpg" class="d-block w-100" alt="..."/>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <img src="./rental-carousel7.jpg" class="d-block w-100" alt="..."/>
+                    </div>
+                </div>
+            </div>
+
+            <div className="container" id="listings-container">
+                <h1 className="display-3" id="greeting-heading">
+                    Available Rentals 
+                </h1>
+
+                <div className="row row-cols-1 row-cols-md-3 g-4">
+                    {allListings}
+                </div>
+            </div>
+        </>
+    )
+}
+
+export default Listings
