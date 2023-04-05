@@ -20,6 +20,10 @@ const Navbar = () => {
                             </li>
 
                             <li className="nav-item">
+                                <a className="nav-link" href="/listings" alt="all available rentals nav link">Available Rentals</a>
+                            </li>
+
+                            <li className="nav-item">
                                 <a className="nav-link" href="/listings/new" alt="add listing nav link">Add Listing</a>
                             </li>
 
