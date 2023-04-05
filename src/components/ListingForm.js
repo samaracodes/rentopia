@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate } from 'react-router-dom'
 
-const ListingForm = ({ onAddListing, allListings }) => {
+const ListingForm = ({ onAddListing }) => {
     const initialState = {
         imageUrl: "",
         location: "",
@@ -12,7 +12,6 @@ const ListingForm = ({ onAddListing, allListings }) => {
     }
 
     const navigate = useNavigate()
-
 
     const [formData, setFormData] = useState(initialState)
 
