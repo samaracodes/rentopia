@@ -58,7 +58,7 @@ const ListingForm = ({ onAddListing }) => {
                 setFormData(initialState);
 
                 //redirect to homepage to see new listing
-                navigate("/")
+                navigate("/listings")
             } else {
                 console.error('Error', newListing)
             }

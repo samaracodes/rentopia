@@ -1,7 +1,7 @@
 import React, { useEffect, useState }from "react";
-import { Link, useParams } from 'react-router-dom'
+import { Link, useParams, useNavigate } from 'react-router-dom'
 
-const ListingItem = () => {
+const ListingItem = ({ onDeleteListing }) => {
     const { id } = useParams() 
     const [listing, setListing] = useState(null)
     const [ isLoaded, setIsLoaded ] = useState(false)
@@ -20,10 +20,20 @@ const ListingItem = () => {
     }, [id])
 
 
+    const navigate = useNavigate()
+
     //Reference isLoaded State. If false, render simple "Hi.. Loading.." component
     if (!isLoaded) return <h1>Loading...</h1>
 
     const { imageUrl, location, price, bedrooms, bathrooms, listingDescription } = listing 
+
+    const handleDeleteClick = () => {
+        fetch(`http://localhost:3001/listings/${id}`, {
+            method: "DELETE",
+        })
+            .then((resp) => navigate("/listings"))
+            .then(onDeleteListing(listing))
+    }
     
     return (
         <>
@@ -40,7 +50,7 @@ const ListingItem = () => {
         <Link to={`/listings/${id}/edit`} className="btn btn-primary">Edit</Link>
         <br/>
 
-        <Link className="btn btn-danger">Delete</Link>
+        <Link className="btn btn-danger" onClick={handleDeleteClick}>Delete</Link>
         </>
     )
 }
