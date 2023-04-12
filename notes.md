@@ -25,7 +25,15 @@ PENDING:
 PENDING: 
 (...incl prev uncompleted tasks)
 
-- PATCH method still not working as intended, fetch req issue
-- dynamic routes are working, still need to build ListingItem component
+✅ PATCH method still not working as intended, fetch req issue
+✅ dynamic routes are working, still need to build ListingItem component
 - homepage UI needs revamping
 - implement likes/favorites list 
+
+
+**4/10**
+- dynamic routes JSX rendered, UI needs to be done 
+✅ add edit/delete buttons on listingitem component
+
+**4/12**
+- DELETE req has to be applied to listingsItem components
