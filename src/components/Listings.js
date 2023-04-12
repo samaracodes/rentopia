@@ -1,24 +1,14 @@
 import React, { useState, useEffect } from "react";
 import { Link, useParams } from "react-router-dom";
 
-const Listings = ({ listings, enterListingEditModeFor }) => {
+const Listings = ({ listings }) => {
 
-    const handleEdit = (e) => {
-        console.log("Edit clicked")
-        console.log(e.target)
-
-    }
-
-    const handleDelete = () => {
-        
-    }
 
     const allListings = listings.map((listing) => 
     <div key={listing.id} className="col" id={`listing-col-${listing.id}`}>
         <div id={`listing-card-${listing.id}`}className="card h-100">
 
         <Link to={`/listings/${listing.id}`}>
-
             <img src={listing.imageUrl} className="card-img-top" alt="..."/>
         </Link>
             <div className="card-body">
@@ -36,9 +26,9 @@ const Listings = ({ listings, enterListingEditModeFor }) => {
                     {listing.listingDescription}
                 </p>
                 
-                <Link class="btn btn-primary" type="button" onClick={handleEdit} to={`/listings/${listing.id}/edit`}>Edit</Link>
 
-                <Link class="btn btn-primary" type="button" value="Delete" onClick={handleDelete}>Delete</Link>
+                <Link to={`/listings/${listing.id}`} className="btn btn-primary">View Listing</Link>
+                
             </div>
         </div>
     </div>        
