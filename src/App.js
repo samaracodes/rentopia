@@ -1,6 +1,6 @@
 import './App.css';
 import React, { useState, useEffect } from 'react'
-import { Routes, Route } from 'react-router-dom'
+import { Routes, Route, useNavigate } from 'react-router-dom'
 import Navbar from './components/Navbar';
 import Homepage from './components/Homepage';
 import Listings from './components/Listings';
@@ -35,22 +35,12 @@ function App() {
     setListings(updatedListings)
   }
 
-  const onDeleteListing = (deletedList) => {
-    const updatedListing = listings.filter(
-      (listing) => listing.id !== deletedList.id
+  const onDeleteListing = (deletedListing) => {
+    const updatedListings = listings.filter(
+      (listing) => listing.id !== deletedListing.id
     );
-    setListings(updatedListing);
+    setListings(updatedListings);
   };
-
-  const completeEditing = () => {
-    setListingId(null)
-  }
-
-  // Updates a State => listingId
-  // Initially it is null, ultimately we want listingId to be updated when we press the edit button
-  const enterListingEditModeFor = (listingId) => {
-    setListingId(listingId)
-  }
 
   // Console Messages
   console.log("Rental Listings Inventory🔑")
@@ -68,8 +58,7 @@ function App() {
 
           <Route path="/listings"
             element={<Listings 
-              listings={listings} 
-              enterListingEditModeFor={enterListingEditModeFor} onDeleteListing={onDeleteListing} 
+              listings={listings}  
             />}
           />
 
@@ -80,12 +69,14 @@ function App() {
           />
 
           <Route path="/listings/:id" 
-            element={<ListingItem />}
+            element={<ListingItem 
+              onDeleteListing={onDeleteListing} />
+            }
           />
 
           <Route path="/listings/:id/edit" 
             element={<ListingEditForm 
-              listingId={listingId} onUpdateListing={onUpdateListing} />
+              onUpdateListing={onUpdateListing} />
             }
           />
           
