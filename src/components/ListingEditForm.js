@@ -3,7 +3,9 @@ import { useState, useEffect } from "react";
 import { useNavigate, useParams } from "react-router-dom"
 
 
-const ListingEditForm = ({ listingId, onUpdateListing, completeEditing }) => {
+const ListingEditForm = ({ onUpdateListing }) => {
+    const { id } = useParams()
+
     const [formData, setFormData] = useState({
         imageUrl: "",
         location: "",
@@ -20,7 +22,7 @@ const ListingEditForm = ({ listingId, onUpdateListing, completeEditing }) => {
      // Everytime we update "listingId", we want to fire 
     // off a fetch request to pull THAT listing's ID.
     useEffect(() => {
-        fetch(`http:localhost:3001/listings/1`)
+        fetch(`http://localhost:3001/listings/${id}`)
             .then((res) => res.json())
             .then((listing) => setFormData(listing))
     }, [])
@@ -45,14 +47,18 @@ const ListingEditForm = ({ listingId, onUpdateListing, completeEditing }) => {
             body: JSON.stringify(formData),
         }
 
-        fetch(`http://localhost:3001/listings/1`, configObj)
+        fetch(`http://localhost:3001/listings/${id}`, configObj)
           .then((resp) => resp.json())
           .then((updatedListing) => {
 
             // merge newest listing into "allListings"
                 onUpdateListing(updatedListing);
-            //     //redirect to homepage to see new listing
-            //     navigate("/")
+
+            // Console Log when successfully updated
+            console.log(`🎉 Listing ${id}: Successfully updated`);
+
+            // redirect to homepage to see new listing
+                navigate("/listings")
         });
     };
 
