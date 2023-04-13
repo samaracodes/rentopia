@@ -7,7 +7,7 @@ const Navbar = () => {
                 <div className="container-fluid">
                     
                     <a className="navbar-brand mb-1 h1" id="nav-brand-name" href="/">
-                        <img src="./public/brand-2.png" className="d-inline-block" />
+                        <img src="brand-2.png" className="d-inline-block" />
 
                         RENTOPIA
                         <span className="navbar-brand" id="nav-sub-brand">LUXURY RENTALS</span>
