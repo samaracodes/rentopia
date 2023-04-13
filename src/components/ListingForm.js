@@ -45,7 +45,7 @@ const ListingForm = ({ onAddListing }) => {
     
 
         //Add POST fetch request
-        fetch("http://localhost:3001/listings", configObj)
+        fetch("https://my-json-server.typicode.com/samaracodes/rentopia/listings", configObj)
           .then((res) => res.json())
           .then((newListing) => {
             if (newListing) {
@@ -72,7 +72,6 @@ const ListingForm = ({ onAddListing }) => {
                 <div className="mx-auto col-sm-5 ">
                     <form className="form" onSubmit={handleSubmit}>
                         <h1 className="display-3" id="greeting-heading">Listing Form</h1>
-                        <p>We will display Listing Form here.</p>
 
 
                         <div className="col mb-3 form-group">

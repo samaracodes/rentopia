@@ -28,6 +28,13 @@ const Listings = ({ listings }) => {
                 
 
                 <Link to={`/listings/${listing.id}`} className="btn btn-primary">View Listing</Link>
+
+                <button className="btn btn-outline-primary">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
+                    </svg>
+                </button>
+
                 
             </div>
         </div>
@@ -37,34 +44,34 @@ const Listings = ({ listings }) => {
 
     return (
         <>
-            <div id="Listing-carousel" class="carousel slide" data-bs-ride="carousel" data-bs-pause="false">
-                <div class="carousel-inner">
+            <div id="Listing-carousel" className="carousel slide" data-bs-ride="carousel" data-bs-pause="false">
+                <div className="carousel-inner">
 
-                    <div class="carousel-item active" data-bs-interval="2000">
-                        <img src="./rental-carousel1.jpeg" class="d-block w-100" alt="..."/>
+                    <div className="carousel-item active" data-bs-interval="2000">
+                        <img src="./rental-carousel1.jpeg" className="d-block w-100" alt="..."/>
                     </div>
 
-                    <div class="carousel-item" data-bs-interval="2000">
-                        <img src="./rental-carousel2.jpg" class="d-block w-100" alt="..."/>
+                    <div className="carousel-item" data-bs-interval="2000">
+                        <img src="./rental-carousel2.jpg" className="d-block w-100" alt="..."/>
                     </div>
 
-                    <div class="carousel-item" data-bs-interval="2000">
-                        <img src="./rental-carousel3.jpg" class="d-block w-100" alt="..."/>
+                    <div className="carousel-item" data-bs-interval="2000">
+                        <img src="./rental-carousel3.jpg" className="d-block w-100" alt="..."/>
                     </div>
 
-                    <div class="carousel-item" data-bs-interval="2000">
-                        <img src="./rental-carousel4.jpg" class="d-block w-100" alt="..."/>
+                    <div className="carousel-item" data-bs-interval="2000">
+                        <img src="./rental-carousel4.jpg" className="d-block w-100" alt="..."/>
                     </div>
 
-                    <div class="carousel-item" data-bs-interval="2000">
-                        <img src="./rental-carousel5.jpg" class="d-block w-100" alt="..."/>
+                    <div className="carousel-item" data-bs-interval="2000">
+                        <img src="./rental-carousel5.jpg" className="d-block w-100" alt="..."/>
                     </div>
 
-                    <div class="carousel-item" data-bs-interval="2000">
-                        <img src="./rental-carousel6.jpg" class="d-block w-100" alt="..."/>
+                    <div className="carousel-item" data-bs-interval="2000">
+                        <img src="./rental-carousel6.jpg" className="d-block w-100" alt="..."/>
                     </div>
-                    <div class="carousel-item" data-bs-interval="2000">
-                        <img src="./rental-carousel7.jpg" class="d-block w-100" alt="..."/>
+                    <div className="carousel-item" data-bs-interval="2000">
+                        <img src="./rental-carousel7.jpg" className="d-block w-100" alt="..."/>
                     </div>
                 </div>
             </div>

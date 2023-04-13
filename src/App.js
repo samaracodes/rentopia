@@ -7,6 +7,7 @@ import Listings from './components/Listings';
 import ListingForm from './components/ListingForm';
 import ListingEditForm from './components/ListingEditForm';
 import ListingItem from './components/ListingItem';
+import Favorites from './components/Favorites';
 
 
 
@@ -15,7 +16,7 @@ function App() {
   const [listingId, setListingId] = useState(null)
   
   useEffect(() => {
-      fetch("http://localhost:3001/listings")
+      fetch("https://my-json-server.typicode.com/samaracodes/rentopia/listings")
       .then((response) => response.json())
       .then((listings) => setListings(listings))
   }, [])
@@ -79,6 +80,8 @@ function App() {
               onUpdateListing={onUpdateListing} />
             }
           />
+
+          <Route path="/favorites" element={<Favorites />}/>
           
         </Routes>
     </div>

@@ -8,7 +8,7 @@ const ListingItem = ({ onDeleteListing }) => {
 
 
     useEffect(() => {
-        fetch(`http://localhost:3001/listings/${id}`)
+        fetch(`https://my-json-server.typicode.com/samaracodes/rentopia/listings/${id}`)
         .then((resp) => resp.json())
         .then((listing => {
             // Currently, before we can get to this step, we need to be able to destructure project
@@ -28,7 +28,7 @@ const ListingItem = ({ onDeleteListing }) => {
     const { imageUrl, location, price, bedrooms, bathrooms, listingDescription } = listing 
 
     const handleDeleteClick = () => {
-        fetch(`http://localhost:3001/listings/${id}`, {
+        fetch(`https://my-json-server.typicode.com/samaracodes/rentopia/listings/${id}`, {
             method: "DELETE",
         })
             .then((resp) => navigate("/listings"))
@@ -39,7 +39,7 @@ const ListingItem = ({ onDeleteListing }) => {
         <>
         <h1>Listing Id: {id}</h1>
 
-        <img src={imageUrl} alt="Listing Images" style={{width: 800, height: 500}}  />
+        <img className="listingImages" src={imageUrl} alt="Listing Images" style={{width: 800, height: 500}} />
         <h1>{price}</h1>
         <h3>Location: {location}</h3>
         <h3>Bedroooms: {bedrooms}</h3>
