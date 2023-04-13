@@ -20,15 +20,15 @@ const Navbar = () => {
                             </li>
 
                             <li className="nav-item">
-                                <a className="nav-link" href="/rentopia/listings" alt="all available rentals nav link">Available Rentals</a>
+                                <a className="nav-link" href="/listings" alt="all available rentals nav link">Available Rentals</a>
                             </li>
 
                             <li className="nav-item">
-                                <a className="nav-link" href="/rentopia/listings/new" alt="add listing nav link">Add Listing</a>
+                                <a className="nav-link" href="/listings/new" alt="add listing nav link">Add Listing</a>
                             </li>
 
                             <li className="nav-item">
-                                <a className="nav-link" href="/rentopia/favorites" alt="listing favorites">Favorites </a>
+                                <a className="nav-link" href="/favorites" alt="listing favorites">Favorites </a>
                             </li>
                         </ul>
                     </div>
