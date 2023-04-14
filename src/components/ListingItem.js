@@ -8,7 +8,7 @@ const ListingItem = ({ onDeleteListing }) => {
 
 
     useEffect(() => {
-        fetch(`https://my-json-server.typicode.com/samaracodes/rentopia/listings/${id}`)
+        fetch(`https://rentopia-backend.onrender.com/listings/${id}`)
         .then((resp) => resp.json())
         .then((listing => {
             // Currently, before we can get to this step, we need to be able to destructure project
