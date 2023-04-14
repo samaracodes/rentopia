@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/rentopia/static/css/main.aef4f352.css",
-    "main.js": "/rentopia/static/js/main.c9b39c70.js",
+    "main.js": "/rentopia/static/js/main.fab217e4.js",
     "static/js/787.9418e972.chunk.js": "/rentopia/static/js/787.9418e972.chunk.js",
     "index.html": "/rentopia/index.html",
     "main.aef4f352.css.map": "/rentopia/static/css/main.aef4f352.css.map",
-    "main.c9b39c70.js.map": "/rentopia/static/js/main.c9b39c70.js.map",
+    "main.fab217e4.js.map": "/rentopia/static/js/main.fab217e4.js.map",
     "787.9418e972.chunk.js.map": "/rentopia/static/js/787.9418e972.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.aef4f352.css",
-    "static/js/main.c9b39c70.js"
+    "static/js/main.fab217e4.js"
   ]
 }
