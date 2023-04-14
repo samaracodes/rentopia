@@ -16,7 +16,7 @@ function App() {
   const [listingId, setListingId] = useState(null)
   
   useEffect(() => {
-      fetch("https://my-json-server.typicode.com/samaracodes/rentopia/listings")
+      fetch("https://rentopia-backend.onrender.com/listings")
       .then((response) => response.json())
       .then((listings) => setListings(listings))
   }, [])
@@ -52,7 +52,7 @@ function App() {
         <Navbar />
 
         <Routes>
-          <Route path="/rentopia" 
+          <Route path="/" 
             element={<Homepage />
             } 
           />

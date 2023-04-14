@@ -45,7 +45,7 @@ const ListingForm = ({ onAddListing }) => {
     
 
         //Add POST fetch request
-        fetch("https://my-json-server.typicode.com/samaracodes/rentopia/listings", configObj)
+        fetch("https://rentopia-backend.onrender.com/listings", configObj)
           .then((res) => res.json())
           .then((newListing) => {
             if (newListing) {

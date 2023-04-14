@@ -28,7 +28,7 @@ const ListingItem = ({ onDeleteListing }) => {
     const { imageUrl, location, price, bedrooms, bathrooms, listingDescription } = listing 
 
     const handleDeleteClick = () => {
-        fetch(`https://my-json-server.typicode.com/samaracodes/rentopia/listings/${id}`, {
+        fetch(`https://rentopia-backend.onrender.com/listings/${id}`, {
             method: "DELETE",
         })
             .then((resp) => navigate("/listings"))

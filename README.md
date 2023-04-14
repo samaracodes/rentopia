@@ -1,3 +1,18 @@
+# Rentopia 
+Find all NYC apartments for rent. 
+
+Rentopia is an MVP SPA React frontend application with a REST API created with JSON Server that demonstrates client-server communication.
+
+
+Live Project Site:
+- https://samaracodes.github.io/rentopia/
+
+Backend Site:
+- https://rentopia-backend.onrender.com/listings
+
+Github Repo: 
+- https://github.com/samaracodes/rentopia
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -13,6 +28,12 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
+
+## `json-server --watch db.json port 3001`
+
+Runs the backend JSON server and allows us to open our database.
+Open [http://localhost:3001](http://localhost:3001) to view the database in your browser.
+ 
 
 ### `npm test`
 

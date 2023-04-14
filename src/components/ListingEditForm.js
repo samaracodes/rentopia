@@ -22,7 +22,7 @@ const ListingEditForm = ({ onUpdateListing }) => {
      // Everytime we update "listingId", we want to fire 
     // off a fetch request to pull THAT listing's ID.
     useEffect(() => {
-        fetch(`http://localhost:3001/listings/${id}`)
+        fetch(`https://rentopia-backend.onrender.com/listings/${id}`)
             .then((res) => res.json())
             .then((listing) => setFormData(listing))
     }, [])
@@ -47,7 +47,7 @@ const ListingEditForm = ({ onUpdateListing }) => {
             body: JSON.stringify(formData),
         }
 
-        fetch(`http://localhost:3001/listings/${id}`, configObj)
+        fetch(`https://rentopia-backend.onrender.com/listings/${id}`, configObj)
           .then((resp) => resp.json())
           .then((updatedListing) => {
 
