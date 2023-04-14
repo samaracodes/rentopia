@@ -1,6 +1,6 @@
 {
   "name": "rentopia-react",
-  "homepage": "https://samaracodes.github.io/rentopia",
+  "homepage": "rentopia",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

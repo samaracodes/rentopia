@@ -52,7 +52,7 @@ function App() {
         <Navbar />
 
         <Routes>
-          <Route path="/" 
+          <Route path="/rentopia" 
             element={<Homepage />
             } 
           />

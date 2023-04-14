@@ -10,7 +10,7 @@ const Homepage = ({ listings }) => {
                 <div className="carousel-inner">
 
                     <div className="carousel-item active" data-bs-interval="2000">
-                        <img src="rental-carousel1.jpeg" className="d-block w-100" alt="..."/>
+                        <img src="./rental-carousel1.jpeg" className="d-block w-100" alt="..."/>
                     </div>
 
                     <div className="carousel-item" data-bs-interval="2000">
