@@ -36,4 +36,9 @@ PENDING:
 ✅ add edit/delete buttons on listingitem component
 
 **4/12**
-- DELETE req has to be applied to listingsItem components
+✅ DELETE req has to be applied to listingsItem components
+
+**4/13**
+✅ Like button added to cards
+- Favorites state has to be created
+- Like button needs to have an event handler to set/update state
